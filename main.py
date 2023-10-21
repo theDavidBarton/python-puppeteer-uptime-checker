@@ -4,6 +4,7 @@ import os
 import json
 from monitoring import monitoring
 
+
 async def simple_uptime_check():
     browser = await launch(headless=True, args=['--no-sandbox', '--disable-setuid-sandbox'])
     browser_ws_endpoint = browser.wsEndpoint
