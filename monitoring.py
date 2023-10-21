@@ -1,5 +1,5 @@
-import asyncio
 from pyppeteer import connect
+
 
 async def monitoring(url, selector, browser_ws_endpoint):
     max_retry = 3

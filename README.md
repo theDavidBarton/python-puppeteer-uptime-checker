@@ -1,6 +1,6 @@
 # python-puppeteer-uptime-checker
 
- Python version of the [Simple Puppeteer uptime checker](https://github.com/theDavidBarton/simple-puppeteer-uptime-checker)
+ Python version of the [Simple Puppeteer uptime checker](https://github.com/theDavidBarton/simple-puppeteer-uptime-checker).
 
 ## Install
 
@@ -41,9 +41,31 @@ HEALTH CHECK PASSED on https://badssl.com/ with HTTP 200
 HEALTH CHECK PASSED on https://google.com with HTTP 200
 ```
 
+## GitHub Actions usage
+
+Example:
+
+```yml
+name: monitoring
+on:
+  workflow_dispatch:
+jobs:
+  run-health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Python 3
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      - name: Install project
+        run: pip install -r requirements.txt
+      - name: Run health check
+        run: python main.py
+ ```
+
 # License
 
 MIT License
 
 Copyright (c) 2023 David Barton
-
