@@ -1,6 +1,6 @@
 # python-puppeteer-uptime-checker
 
- Python version of the [Simple Puppeteer uptime checker](https://github.com/theDavidBarton/simple-puppeteer-uptime-checker).
+Python port of the [Simple Puppeteer uptime checker](https://github.com/theDavidBarton/simple-puppeteer-uptime-checker).
 
 ## Install
 
@@ -8,7 +8,7 @@
 $ pip install -r requirements.txt
 ```
 
-_Note:_ This project depends on deprecated [pyppeteer](https://github.com/pyppeteer/pyppeteer) pckage. As it is is unmaintained and has been outside of minor changes for a long time. They advise considering [playwright-python](https://github.com/microsoft/playwright-python) as an alternative.
+_Note:_ This project depends on the now deprecated [pyppeteer](https://github.com/pyppeteer/pyppeteer) package. As it is unmaintained and has been outside of minor changes for a long time they advise considering [playwright-python](https://github.com/microsoft/playwright-python) as an alternative.
 
 ## Setup
 
